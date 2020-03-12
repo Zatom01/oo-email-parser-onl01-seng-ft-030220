@@ -8,13 +8,13 @@ class EmailAddressParser
   
   def initialize(emails)
     @emails=emails
-    self.parse(emails)
+    
   end 
   
-  def self.parse(string_emails)
+  def parse
     new_arr=[]
     arr=[]
-    @parse=string_emails.split(/[\s,]/).uniq
+    @parse=@emails.split(/[\s,]/).uniq
 
     @parse.collect do |each|
       if each!=""
@@ -29,4 +29,10 @@ class EmailAddressParser
   
 
 
-end
+end 
+
+
+
+
+
+
