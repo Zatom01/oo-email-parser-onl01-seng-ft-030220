@@ -11,7 +11,7 @@ class EmailAddressParser
     self.parse(emails)
   end 
   
-  def parse(string_emails)
+  def self.parse(string_emails)
     new_arr=[]
     arr=[]
     @parse=string_emails.split(/[\s,]/).uniq
